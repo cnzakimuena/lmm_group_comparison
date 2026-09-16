@@ -1,5 +1,5 @@
 
-# Preprocessing class to manipulate tabular ophthalmic data.
+# Preprocessing class to manipulate tabular data.
 library(R6)
 library(dplyr)
 library(here)
@@ -32,7 +32,7 @@ PreprocessorR6 <-
                  
                  # This method loops through the discovered CSV files, cleans 
                  # column names by stripping eye-specific suffixes, and inserts 
-                 # an explicit eye column as in each data frame. It then stacks 
+                 # an explicit eye column in each data frame. It then stacks 
                  # these individual data frames row-wise and optionally saves 
                  # the consolidated dataset.
                  get_df = function(save_csv_file = FALSE) {                 
